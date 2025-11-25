@@ -272,6 +272,46 @@ section {
     color: #f0f0f0;
     font-size: 0.95rem;
 }
+/* Desktop */
+@media (min-width: 768px) {
+    .carousel-item {
+        height: 450px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .carousel-item {
+        height: auto;      /* deixa altura automática */
+    }
+    
+    .carousel-item img {
+        height: auto;      /* imagem ocupa altura proporcional */
+        max-height: 60vh;  /* opcional: limita altura a 60% da tela */
+        object-fit: cover; /* mantém corte proporcional */
+        width: 100%;       /* sempre ocupar toda a largura */
+    }
+}
+@media (max-width: 767px) {
+    .carousel-caption {
+        bottom: 10px;       /* mais perto da base */
+        left: 10px;
+        right: 10px;
+        text-align: left;   /* ou center */
+        background-color: rgba(0,0,0,0.4); /* fundo semitransparente opcional */
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1rem;   /* ajustar fonte para mobile */
+    }
+
+    .carousel-caption p {
+        font-size: 0.8rem; /* ajustar fonte para mobile */
+    }
+}
+
 
 
 
