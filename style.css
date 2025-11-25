@@ -291,6 +291,10 @@ section {
         object-fit: cover; /* mantém corte proporcional */
         width: 100%;       /* sempre ocupar toda a largura */
     }
+
+    .carousel-caption p {
+        font-size: 0.95rem;
+    }
 }
 @media (max-width: 767px) {
     .carousel-caption {
@@ -308,7 +312,7 @@ section {
     }
 
     .carousel-caption p {
-        font-size: 0.8rem; /* ajustar fonte para mobile */
+        font-size: 0.95rem; /* ajustar fonte para mobile */
     }
 }
 
