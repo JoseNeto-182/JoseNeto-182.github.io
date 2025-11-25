@@ -193,3 +193,86 @@ section {
     color: rgba(18, 115, 241, 0.852); /* azul para destacar no fundo escuro */
     font-weight: bold;
 }
+
+
+/* Altura fixa para todos os slides */
+.carousel-item {
+    height: 450px;        /* mesma altura para todos os slides */
+    overflow: hidden;     /* esconde excesso das imagens */
+}
+
+/* Primeiro slide - MJ */
+.mj img {
+    width: 100%;
+    height: 100%;         /* ocupa toda a altura do container */
+    object-fit: cover;    /* corta proporcionalmente */
+    object-position: 60% center;  /* ajuste horizontal */
+}
+
+
+.mj-caption h5 {
+    
+    background-color: rgba(0,0,0,0.6);
+}
+.mj-caption p{
+    border: 2px solid rgb(255, 238, 0);        /* define a borda */
+    padding: 5px 10px;              /* espaçamento interno do h5 */
+    border-radius: 5px;             /* cantos arredondados */
+    display: inline-block;           /* para que a borda fique apenas ao redor do texto */
+    background-color: rgba(0,0,0,0.5); /* fundo semi-transparente opcional */
+}
+
+/* Segundo slide - Poatan */
+.poatan img {
+    width: 100%;
+    height: 100%;         /* mesma altura que MJ */
+    object-fit: cover;    /* corta proporcionalmente */
+  object-position: 50% 20%; /* rosto mais para cima */
+}
+.poatan-caption h5  {
+    border-color: rgb(7, 7, 7);
+    background-color: rgba(0,0,0,0.5);
+}
+.poatan-caption p {
+    border: 2px solid rgb(255, 238, 0);        
+    padding: 5px 10px;              
+    border-radius: 5px;             
+    display: inline-block;           
+    background-color: rgba(0,0,0,0.5); 
+}
+
+
+/* Terceiro slide - se precisar */
+.xadrez img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 10% 10% /* ajuste centralizado */
+}
+.xadrez-caption{
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+
+.xadrez-caption h5 {
+     border-color: cyan;
+    background-color: rgba(0,0,0,0.5);
+}
+.xadrez-caption p{
+    border: 2px solid rgb(255, 238, 0);        
+    padding: 5px 10px;              
+    border-radius: 5px;             
+    display: inline-block;           
+    background-color: rgba(0,0,0,0.5); 
+}
+.carousel-caption p {
+    color: #f0f0f0;
+    font-size: 0.95rem;
+}
+
+
+
+
